@@ -1,0 +1,2243 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ariane/ontologies/2017/4/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/ariane/ontologies/2017/4/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#completes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#completes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isCompletedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isInAHJ"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#employs">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isEmployedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasBottleneck -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasBottleneck">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplyChain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasBusinessModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasBusinessModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BusinessModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasInstaller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasInstaller">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#installs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BuildingSectorFirm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarCustomer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasPolicy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasPolicy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasProfitMargin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasProfitMargin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfitMargin"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSite">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystemComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystemComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#impactsCostOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#impactsCostOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#informsDesignOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#informsDesignOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isInformedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BehavioralConstruct"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#installs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#installs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BuildingSectorFirm"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarCustomer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#interoperableWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#interoperableWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isCompletedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isCompletedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isEmployedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isEmployedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isInAHJ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isInAHJ">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isInformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isInformedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BehavioralConstruct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isIssuedCodeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isIssuedCodeBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#issuesCode"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isMotivatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isMotivatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#motivates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BehavioralConstruct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isOwnedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isOwnedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#owns"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarCustomer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isRequiredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#isRequiredBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#requiresPII"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PII"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#issuesCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#issuesCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByAlliance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByAlliance">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByDoing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByDoing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByHiring -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByHiring">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByImitating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByImitating">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByInteracting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByInteracting">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByObserving -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByObserving">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBySearching -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBySearching">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByStandardizing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByStandardizing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByTraining -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByTraining">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByUsing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByUsing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByWriting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsByWriting">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#learnsBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#motivates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#motivates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BehavioralConstruct"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#offersOwnershipModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#offersOwnershipModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OwnershipModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#owns">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarCustomer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#requiresComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#requiresComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#requiresPII -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#requiresPII">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PII"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#standardIsWrittenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#standardIsWrittenBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#writesStandard"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#substitutesFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#substitutesFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#suppliesComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#suppliesComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#supports -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#supports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#usesOwnershipModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#usesOwnershipModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarCustomer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OwnershipModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#usesSiteAssessment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#usesSiteAssessment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SiteAssessment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#usesSoftware -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#usesSoftware">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarServicesSoftware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#worksInAHJ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#worksInAHJ">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#writesStandard -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#writesStandard">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasAbsorptiveCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasAbsorptiveCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasBankability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasBankability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasCarryCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasCarryCost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasCompletionTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasCompletionTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasConstructionType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasConstructionType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasConversionRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasConversionRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerAcquisition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Finance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasCost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasCustomerSegment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasCustomerSegment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerAcquisition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Finance"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasExperience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasExperience">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasFirmSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasFirmSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasFoundingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasFoundingDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasInsolation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasInsolation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasInstallationTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasInstallationTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasKWcost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasKWcost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasLeadTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasLeadTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasLoanFeature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasLoanFeature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasLoanType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasLoanType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasMonthlyPayment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasMonthlyPayment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasPVReadyCircuit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasPVReadyCircuit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasPurchaseDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasPurchaseDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasRoofCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasRoofCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasRoofPitch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasRoofPitch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasRoofType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasRoofType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasServiceArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasServiceArea">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystemCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystemCost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystemSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystemSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystemType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasSystemType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTimeDelay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTimeDelay">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTrainingCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTrainingCost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTransactionPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTransactionPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTravelTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasTravelTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasUnitCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasUnitCost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasUpfrontCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasUpfrontCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasWage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#hasWage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Advertising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Advertising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MarketingCommunication"/>
+        <rdfs:comment xml:lang="en">Any paid form of non-personal presentation and promotion.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Appraiser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Appraiser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RealEstateSector"/>
+        <rdfs:comment xml:lang="en">Individual who determines the value of a property.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+        <rdfs:comment xml:lang="en">An Authority Having Jurisdiction (AHJ), heavily affects soft costs especially with respect to permitting, inspection, and interconnection. AHJs influence operational costs to installers that must navigate the various entities and policies. These entities set policy on rebates, rates, net metering, etc. that can significantly influence consumer decision making and can add/remove complexity to the installation process. Relevant properties include area, authority, streamlined processes and best practices, solar goals, and RPS. The last two properties indicate an incentive to motivate adoption that could increase adoption rates.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BehavioralConstruct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BehavioralConstruct">
+        <rdfs:comment xml:lang="en">Behavioral research and theory are based on constructs that identify variants in behavior and decision making. Behavioral constructs inform soft costs such as customer acquisition and policy intervention design. This node captures the relationships between behavioral research and soft costs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BidPrepSoftware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BidPrepSoftware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarServicesSoftware"/>
+        <rdfs:comment xml:lang="en">Software to estimate, bid, and quote a solar installation. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BidPreparation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BidPreparation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerAcquisition"/>
+        <rdfs:comment xml:lang="en">Bid preparation is tied to both customer acquisition and design aspects, but usually precedes the full, detailed system design. Bidding provides potential adopters critical information to select an installer and often is included in sales staff responsibilities (most commonly for smaller installers).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BuildingSectorFirm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BuildingSectorFirm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+        <rdfs:comment xml:lang="en">Building sector firms influence the residential market and can impact solar PV installation costs through their practices and product offerings. Additionally, in master planned neighborhoods, developers establish the default Home Owner Association (HOA) policies toward solar. The real estate portion of this class impacts how homes with solar are appraised or financed, and how realtors influence potential buyers&apos; perception of solar. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BusinessApplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BusinessApplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarServicesSoftware"/>
+        <rdfs:comment xml:lang="en">Software related to business functions of a given solar company/member of industry, such as customer relationship management.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BusinessModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BusinessModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Finance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InsuranceCoverage"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OwnershipModel"/>
+        <rdfs:comment xml:lang="en">Business models describe how a firm offers solar to the customer. This is associated with the cost of financing for the firm, assuming finance mechanisms differ based on business model. Associated soft costs may not be directly observable and may need to be inferred based on classifications of firms and pricing data.  Caution should accordingly be taken to separate soft costs associated with distribution (often inventory financing) from this class (see SupplyChain).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CashPurchase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CashPurchase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerOwnership"/>
+        <rdfs:comment xml:lang="en">Upfront purchase of residential solar system. Not expected to increase soft costs associated with solar, but included for completeness of options.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CodesStandardsCompliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CodesStandardsCompliance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SystemDesign"/>
+        <rdfs:comment xml:lang="en">Codes and Standards Compliance are two separate design requirements but are often lumped together. Standards are developed to comply with codes, though they may embody best practices as well. Solar PV system designers need to take training courses or otherwise remain up-to-date on codes and standards, adding a time cost for compliance. Compliance can also add to system costs through additional design, review, or hardware requirements. Some compliance to codes and standards may be engineered into products (thus captured as a hardware cost). This integration can lead to redundant design features, (e.g. code requirements for a separate AC disconnect switch when disconnect is engineered into inverter). Codes and standards can originate from the fire authority, local jurisdiction, National Electric Code, National Fire Protection Association, and zoning department.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Commercials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Commercials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Advertising"/>
+        <rdfs:comment xml:lang="en">A television or radio advertisement.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CommunityBasedMarketing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CommunityBasedMarketing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DirectMarketing"/>
+        <rdfs:comment xml:lang="en">A strategy to engage an audience in an active, non-intrusive prospect and customer conversation. Typically focused on the perceived needs of existing customers as opposed to trying to attract new customers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CommunityMeeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CommunityMeeting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GroupSelling"/>
+        <rdfs:comment xml:lang="en">Marketing/selling to a group of community members. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CommunitySharedSolar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CommunitySharedSolar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BusinessModel"/>
+        <rdfs:comment xml:lang="en">Also known as shared solar, community solar, solar farm, or solar garden. Community solar tends to be much larger systems, shared by a number of customers and frequently working with or sponsored by utilities. By utilizing larger systems community solar is able to achieve economies of scale, but includes additional siting, planning, and engineering costs. Though these systems are out of scope, the concept is included to completely capture competitive options in the residential market. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+        <rdfs:comment xml:lang="en">Complementary firms support needed functions within the solar value chain, for example manufacturing and distribution of components or financing for solar PV systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ConstructionCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ConstructionCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BuildingSectorFirm"/>
+        <rdfs:comment xml:lang="en">This class includes home builders which can influence a number of important decisions for solar PV diffusion. Construction companies, or home builders, can determine roof geometry and orientation,  whether homes will be built solar ready, and whether to include an option that allows financing solar in the mortgage, all of which can significantly reduce soft costs. Construction companies also determine what features are offered or promoted to potential homeowners. Additionally, construction companies have influence with the real estate finance community and can promote products that include &quot;green mortgages&quot; that allow energy efficiency and subsequent energy bill reductions to be factored into the mortgage.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Consultant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Consultant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator"/>
+        <rdfs:comment xml:lang="en">Includes a broad variety of expertise from accounting to management to policy engagement. A consultant provides subject matter expertise needed by an installation firm. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#County -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#County">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Government"/>
+        <rdfs:comment xml:lang="en">County-level government</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerAcquisition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerAcquisition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:comment xml:lang="en">Broadly categorized as the activities of a sales team - including and not limited to generating leads, marketing, and direct sales. We classify customer acquisition as consisting only of costs directly incurred by installer in acquiring a customer. We do not include pre-customer interactions within this definition (e.g. site assessment and system design).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerOwnership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerOwnership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OwnershipModel"/>
+        <rdfs:comment xml:lang="en">Covers multiple potential ownership types such as cash, credit, home equity loans, and mortgage financing. In all cases, the solar customer secures means of financing rather than installer. Also known as end-user owned or system-user owned. This is the only model supported by installation firms but also can be offered by integration firms.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DemandSide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DemandSide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy"/>
+        <rdfs:comment xml:lang="en">Policies targeting demand, i.e., consumers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DesignTemplates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DesignTemplates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarServicesSoftware"/>
+        <rdfs:comment xml:lang="en">Software that streamlines the design and specification of a solar PV system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DirectMarketing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DirectMarketing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MarketingCommunication"/>
+        <rdfs:comment xml:lang="en">Direct communications targeted toward individuals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Distribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Distribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Logistics"/>
+        <rdfs:comment xml:lang="en">It has been found that distribution channels can play an important role in product marketing and training materials regarding solar products. As an important information channel, distributors reflect a mechanism to capture knowledge spillover soft costs reductions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Distributor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Distributor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm"/>
+        <rdfs:comment xml:lang="en">Distributors supply equipment and parts for solar PV installations. These entities also provide demonstrations and education on new equipment and provide financing for installers. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Diversified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Diversified">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOnly"/>
+        <rdfs:comment xml:lang="en">Firms whose primary revenue source includes products and services outside of solar (e.g. roofing firm, home builder, or electrician who also offers solar installations). Operates like an installation firm in terms of their solar offerings. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DoorToDoor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DoorToDoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DirectMarketing"/>
+        <rdfs:comment xml:lang="en">Canvassing technique in which an individual goes door-to-door to market solar or gather information on customer needs. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#EducationalInstitution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#EducationalInstitution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator"/>
+        <rdfs:comment xml:lang="en">Includes any school (e.g. high school, university, community college) or training facility whose primary focus is education. Educational institutions may provide the education necessary to achieve certification or licensure, but typically actual certification or licensure is approved and given by a trade association. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ElectricalInspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ElectricalInspection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inspection"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#StructuralInspection"/>
+        <rdfs:comment xml:lang="en">Inspection of electrical components of the permitted work.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ElectricalLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ElectricalLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfessionalInstallationLabor"/>
+        <rdfs:comment xml:lang="en">Electrical labor requires a license, which tends to be associated with higher costs. Includes on-roof and off-roof labor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#EngineeringDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#EngineeringDesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SystemDesign"/>
+        <rdfs:comment xml:lang="en">Engineering Design is the system design soft cost that comprises: the time to design a system, learn design techniques and best practices, and learn software design tools.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+        <rdfs:comment xml:lang="en">Includes firms that work to increase the ease with which installers can enter the market, improve processes, and navigate policy, regulations, and codes. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Federal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Federal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Government"/>
+        <rdfs:comment xml:lang="en">Federal-level government </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Finance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Finance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:comment xml:lang="en">Topics regarding the financing of the firm and financing for customers. Access to financing plays a central role at every scale of installation. This class is focused on residential solar options and restricted to costs associated with acquiring or providing financing. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#FinanceProvider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#FinanceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm"/>
+        <rdfs:comment xml:lang="en">Finance providers are entities that primarily provide financing. Both project financiers and banks are included.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GeneralConstructionLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GeneralConstructionLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfessionalInstallationLabor"/>
+        <rdfs:comment xml:lang="en">Includes pre-install labor activities, racking labor, mounting labor, and roofing labor. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Government -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Government">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Utility"/>
+        <rdfs:comment xml:lang="en">Government entities that exercise authority over building and safety standards, solar policy, and PII processes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GroupSelling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GroupSelling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PersonalSelling"/>
+        <rdfs:comment xml:lang="en">Marketing/selling to a group as opposed to one-on-one. Sellers may use a more generic strategy, compared to a personalized approach.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#HOA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#HOA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BuildingSectorFirm"/>
+        <rdfs:comment xml:lang="en">Home Owner&apos;s Associations often set neighborhood policies on home exteriors to maintain neighborhood aesthetic. Some HOAs restrict the installation of solar; however, some states have passed state level laws prohibiting HOAs from restricting solar except in specific circumstances such as public safety.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InHouseLeadGeneration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InHouseLeadGeneration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#LeadGeneration"/>
+        <rdfs:comment xml:lang="en">Leads generated by in-house (within firm) sales team.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Incubator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Incubator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator"/>
+        <rdfs:comment xml:lang="en">Organizations that help new businesses get started by providing services such as training or facilities. It is not clear that this model is relevant to small installers, but may be relevant to the soft costs of startups, such as new components, software, or complementary firms. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inspection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PII"/>
+        <rdfs:comment xml:lang="en">Inspection follows completion of permitted work, inspections verify that the work is compliant with standards and codes. Electrical and structural inspection are included as subclasses; however, there are many other types of inspections conducted. All other types of inspections are captured within this class</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+        <rdfs:comment xml:lang="en">A complicated term, since firms take on varied business models - some firms sell installation, financing, equipment but contract actual installation, while others have other primary business models such as construction or roofing. Properties identified as relevant to this subclass include type of installer by scale, experience stock (inferred from data, characterizes # of installations), absorptive capacity, installer size, founding date, service area, and number of AHJs served.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:comment xml:lang="en">Installation labor is the cost of labor needed to install a solar PV system. The associated soft costs are impacted by the components used and the time it takes to install them, as well as building type and site conditions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InsuranceCoverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InsuranceCoverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Finance"/>
+        <rdfs:comment xml:lang="en">Mentioned in the context of TPO firms who must insure solar assests as part of their business model to attract investors and secure bank financing. Insurance is related to the business model of TPOs and directly affect technology bankability, which is coded separately.</rdfs:comment>
+        <rdfs:label xml:lang="en">InsuranceCoverage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Integration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Integration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BusinessModel"/>
+        <rdfs:comment xml:lang="en">Integration firms do the installation, finance and system modeling. These are most commonly larger, national firms that offer TPO options. However, they can also offer basic installation without financing to cash buyers or customers with their own source of financing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interconnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interconnection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PII"/>
+        <rdfs:comment xml:lang="en">Interconnection is the final step in commissioning a PV system. An interconnection application must be submitted to the utility for review and approval to the utility, prior to the beginning of installation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InterconnectionApplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InterconnectionApplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interconnection"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermissionToOperate"/>
+        <rdfs:comment xml:lang="en">Installer side of interconnection application process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InterconnectionInspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InterconnectionInspection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interconnection"/>
+        <rdfs:comment xml:lang="en">Process of utility inspecting installation for code compliance prior to issuance of permission to operate. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InterconnectionReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InterconnectionReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interconnection"/>
+        <rdfs:comment xml:lang="en">Utility side of interconnection application process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy"/>
+        <rdfs:comment xml:lang="en">Policies that target the interface between supply and demand side policy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inventory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inventory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Logistics"/>
+        <rdfs:comment xml:lang="en">Inventory refers to warehousing cost (separate class here) and contingency costs. Contingency costs can reduce soft costs related to bottlenecks, they can also increase costs related to inventory changeover, where price declines do not pass through to consumers until inventory is exhausted.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inverter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inverter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemHardware"/>
+        <rdfs:comment xml:lang="en">Type of electrical component which converts the variable direct current (DC) output of a photovoltaic (PV) solar panel into a grid compliant alternating current (AC) that can be fed into a commercial electrical grid or used by a local, off-grid electrical network.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#LeadGeneration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#LeadGeneration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerAcquisition"/>
+        <rdfs:comment xml:lang="en">LeadGeneration includes internal and external lead generation, marketplaces, and channel partners, as these are primary means of finding potential solar adopters. Leads that come from referrals are not included in this instance (see MarketingCommunication)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Loan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Loan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerOwnership"/>
+        <rdfs:comment xml:lang="en">Synonymous with credit financing and include home equity loans. Like a typical loan, requires applying for a solar loan from a bank to allow consumers a method of purchasing solar without having to pay all costs upfront. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Logistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Logistics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplyChain"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Procurement"/>
+        <rdfs:comment xml:lang="en">Logistics is the integration and management of the product value chain from suppliers to consumers. There is little information on how logistics impact solar soft costs - since our focus is on installers, we focus on logistics that are closer to distributers and installers. These logistical issues include distribution, inventory, transportation, and warehousing. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm"/>
+        <rdfs:comment xml:lang="en">Manufacturers are entities that produce the components for a solar PV installation. A manufacturer may sell to a consumer, installer, or distributor. It is assumed that manufacturers in the solar ecosystem also designed the equipment produced in this context.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MarketingCommunication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MarketingCommunication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerAcquisition"/>
+        <rdfs:comment xml:lang="en">MarketingCommunications consists of five strategies - advertising, sales promotion, PR, personal selling, and direct marketing. These five strategies are broken down into substrategies to capture the differences in associated cost, conversion rate, and market segments.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Marketplace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Marketplace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#LeadGeneration"/>
+        <rdfs:comment xml:lang="en">A platform for generating and acquiring leads. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MassMedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MassMedia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Advertising"/>
+        <rdfs:comment xml:lang="en">Media exposure intended to reach a large audience.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MortgageFinancing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MortgageFinancing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerOwnership"/>
+        <rdfs:comment xml:lang="en">Synonymous with cross financing. Financing of solar installation through mortgage.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MortgageLender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MortgageLender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RealEstateSector"/>
+        <rdfs:comment xml:lang="en">A person or company that loans money and takes a security interest in real property.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Mounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Mounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemHardware"/>
+        <rdfs:comment xml:lang="en">Used to fix solar panels to roofs and other surfaces.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Municipal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Municipal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Government"/>
+        <rdfs:comment xml:lang="en">Municipal-level government can include cities, towns, and other smaller local entities. Within this ontology, municipal is the lowest, most local AHJ.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#NeighborhoodCanvassing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#NeighborhoodCanvassing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Advertising"/>
+        <rdfs:comment xml:lang="en">Door-to-door outreach, community outreach, and canvass efforts to inform others of the benefits of switching to solar.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OffRoofLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OffRoofLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ElectricalLabor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OnRoofLabor"/>
+        <rdfs:comment xml:lang="en">Off roof labor can be more cost effective than on-roof labor. Includes electrical equipment and inverter installation, electrical conduit installation and disconnect installation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OffSitePrep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OffSitePrep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PreinstallLabor"/>
+        <rdfs:comment xml:lang="en">Installation preparation done away from installation site. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OnRoofLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OnRoofLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ElectricalLabor"/>
+        <rdfs:comment xml:lang="en">On roof labor is generally less cost effective than off-roof labor. Includes homerun installation, grounding installation, and combiner installation. Solar ready homes should reduce on-roof labor. Other combinations of components or design, may also reduce on-roof labor/electrical labor in general.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OnSiteAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OnSiteAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SiteAssessment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RemoteAssessment"/>
+        <rdfs:comment xml:lang="en">Site assessment that requires the assessor to travel to the site of installation for visual inspection.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OnSitePrep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OnSitePrep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PreinstallLabor"/>
+        <rdfs:comment xml:lang="en">Installation preparation done at installation site. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OverheadCost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OverheadCost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:comment xml:lang="en">Includes a variety of costs depending on how a firm organizes expenditures.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OwnershipModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OwnershipModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Finance"/>
+        <rdfs:comment xml:lang="en">Ownership model comprises the primary types of customer financing offered and the relevant soft costs associated with customer financing and affordability. The relationship between customer acquisition and available financing is important given that customer acquisition is a persistent soft costs and access to financing can open up new market segments.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PACE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PACE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerOwnership"/>
+        <rdfs:comment xml:lang="en">Property-assessed clean energy financing is a means of financing residential, commercial, and industrial energy upgrades. The loan is paid back to local government through an assessment attached to the annual property tax bill. Available in states with PACE enabling legislation and where state government has allocated funds for solar installation within its PACE program. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:comment xml:lang="en">Permitting, Inspection, and Interconnection (PII). These processes are commonly grouped together and include the tasks of working with cities and utilities to commission a solar PV system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Panel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Panel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemHardware"/>
+        <rdfs:comment xml:lang="en">Photovoltaic panels that absorb sunlight and convert it into DC (direct current) electricity. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermissionToOperate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermissionToOperate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interconnection"/>
+        <rdfs:comment xml:lang="en">Permission to Operate is the formal approval begin operation of the solar PV system, once the project is complete and has passed all local inspections.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitApplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitApplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Permitting"/>
+        <rdfs:comment xml:lang="en">Process of submitting an application.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitApproval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitApproval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Permitting"/>
+        <rdfs:comment xml:lang="en">Process of receiving final approval to move forward with project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Permitting"/>
+        <rdfs:comment xml:lang="en">Process of review of permit application by authority.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Permitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Permitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PII"/>
+        <rdfs:comment xml:lang="en">Permitting fees associated with PII are considered to be the most direct soft cost of PII. Permitting includes preparing and submitting the application, waiting for review, and receiving final approval. This process can be lengthy, as it may include multiple phone calls and visits to city offices to complete an application and delays while waiting for review and approval. Occasionally there may be multiple jurisdictions or requirements for more than one permit, which can add to the length of process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PersonalSelling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PersonalSelling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MarketingCommunication"/>
+        <rdfs:comment xml:lang="en">One-on-one marketing using the sales force (sales people). Sellers promote solar through a personalized approach, tailored to an individual customer&apos;s needs. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy">
+        <rdfs:comment xml:lang="en">Policy is a difficult concept to consider in terms of solar soft costs and the scope of the ontology, because policy is both amorphous in form and extensive in scope. Policy has a considerable impact on soft costs, for example demand side policies, such as federal, state, and local tax incentives and utility interconnection and compensation policies, all impact consumer preferences toward solar. On the other side of the spectrum supply side policies, such as competition, market structures, and safety standards impacting installation labor practices and inspection procedures, and local labor laws impacting installation labor costs, all potentially impact solar soft costs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PreinstallLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PreinstallLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GeneralConstructionLabor"/>
+        <rdfs:comment xml:lang="en">Includes off-site and on-site preparation, as well as travel.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Procurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Procurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplyChain"/>
+        <rdfs:comment xml:lang="en">Procurement includes costs associated with finding a supplier, agreeing to contract terms, and purchasing components. This concept is most frequently associated with engineering, procurement and construction as a soft cost or contractor type in the literature.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfessionalInstallationLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfessionalInstallationLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationLabor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SelfInstallationLabor"/>
+        <rdfs:comment xml:lang="en">Professional Installation Labor includes costs associated with non-owner installation of the system. The installation processes include pre-installation, racking &amp; mounting, electrical, and non-production costs. Additional concepts affecting installation costs are roofing labor, general construction, and project management. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfitMargin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfitMargin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OverheadCost"/>
+        <rdfs:comment xml:lang="en">The amount by which revenue exceeds costs of business.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProjectManagementLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProjectManagementLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfessionalInstallationLabor"/>
+        <rdfs:comment xml:lang="en">Project Management Labor includes all coordination and planning activities. Though smaller firms may not have a dedicated project manager, another trade or role who assumes project management responsibilities would be included.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PublicRelations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PublicRelations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MarketingCommunication"/>
+        <rdfs:comment xml:lang="en">Developing good relations with prospective buyers through obtaining good publicity (e.g. being heard about because of awards).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RackingLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RackingLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GeneralConstructionLabor"/>
+        <rdfs:comment xml:lang="en">Along with mounting labor, include positioning and attaching the components, racking, and modules. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RealEstateSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RealEstateSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BuildingSectorFirm"/>
+        <rdfs:comment xml:lang="en">This sector can influence customer acquisition and finance related to solar soft costs. When this sector recognizes the value of a solar installation they can better communicate that information to buyers and sellers and better represent that value in real estate transactions and loans. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Realtor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Realtor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RealEstateSector"/>
+        <rdfs:comment xml:lang="en">A person who acts as an agent for the sale and purchase of buildings and land.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ReferralProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ReferralProgram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SalesPromotion"/>
+        <rdfs:comment xml:lang="en">A deliberate and systematic method of incentivizing referrals. Typically provide incentive for existing customers to engage in word-of-mouth sharing of solar. Often additionally tied with social media strategies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RemoteAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RemoteAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SiteAssessment"/>
+        <rdfs:comment xml:lang="en">Use of remote methods to assess a site. Remote assessment may be effective at reducing soft costs but may miss some details (e.g. roof protrusions, neighboring structures). Remote assessment tools are becoming more sophisticated and comprehensive over time, which could prevent the need for on-site assessment entirely in the future. However, these tools may prove too expensive for smaller installers. Thus, these methods may be either complimentary or alternative approaches. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ResearchOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ResearchOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator"/>
+        <rdfs:comment xml:lang="en">Any organization that does original research on any solar PV related products, services, or knowledge (e.g. new modules, insolation data, or design best practices). These organizations can be for-profit or not-for-profit. National labs would fall into this subclass, but could also include educational institutions, manufacturers, or other entities that may engage in research activities. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Retail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Retail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SalesPromotion"/>
+        <rdfs:comment xml:lang="en">Sale of solar to the public through retail outlets, rather than directly through installers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Retailer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Retailer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm"/>
+        <rdfs:comment xml:lang="en">A retailer (e.g. big box store) acts as a channel partner for solar PV components and/or subcontract installations to local installers. In this way, they increase customer acquisition and conversion.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RoadShows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RoadShows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GroupSelling"/>
+        <rdfs:comment xml:lang="en">A series of marketing events in different locations. Often comprised of business meetings and conferences.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RoofingLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RoofingLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ProfessionalInstallationLabor"/>
+        <rdfs:comment xml:lang="en">Roofing labor includes installation practices that necessitate specialized roofing labor. Not all states require a license and only some require a contractor license, which makes this class harder to define universally. Whether this subclass is needed will depend on the size of the overlap with GeneralConstructionLabor and stakeholder feedback. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SalesPromotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SalesPromotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MarketingCommunication"/>
+        <rdfs:comment xml:lang="en">Short-term incentives for purchasing solar. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SelfInstallationLabor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SelfInstallationLabor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationLabor"/>
+        <rdfs:comment xml:lang="en">Included for completeness (and included in TTS dataset) and serves as baseline for systems that do not include professional labor. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ServiceProvider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm"/>
+        <rdfs:comment xml:lang="en">A service provider has an open-ended definition, as &quot;services&quot; can be broad and we observe a wide range of offerings. In the corpus, services mentioned include data provision, IT services, and software developers. The most frequently mentioned applications include bid preparation, business applications (sales and customer management), design templates, and site assessment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SiteAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SiteAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SystemDesign"/>
+        <rdfs:comment xml:lang="en">Site Assessment is required for designing a system and includes costs associated with travel, assessment time, software tools, and access to databases. Some of these costs could also be associated with customer acquisition to provide a reasonable bid. There are a number of methods for site assessment including visual on-site inspection, drone inspections, remote site assessment, LiDAR, and satellite based solar irradiation. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SiteAssessmentSoftware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SiteAssessmentSoftware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarServicesSoftware"/>
+        <rdfs:comment xml:lang="en">Software relating to the assessment of an installation site.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SocialMedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SocialMedia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SalesPromotion"/>
+        <rdfs:comment xml:lang="en">Sales via websites and applications that enable users to create and share content or to participate in social networking. Often targeted based on user social media data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarIndividual"/>
+        <rdfs:comment xml:lang="en">Individuals that create a demand for solar. Customers also provide important information sharing channels to both other potential solar customers through peer effects and installers through selection of features and acceptance of bids.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarEmployee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarIndividual"/>
+        <rdfs:comment xml:lang="en">Individuals primarily responsible for acquiring, producing, sharing, and implementing knowledge within the solar organization. A &quot;Solar Employee&quot; may not directly be employed in the solar industry, but may work in an ancillary industry (e.g. distributors, electricians, roofers, etc.). For this ontology, all actors within the solar ecosystem are considered Solar Employees. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarIndividual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarIndividual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization"/>
+        <rdfs:comment xml:lang="en">Individuals in the solar ecosystem.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BusinessModel"/>
+        <rdfs:comment xml:lang="en">Installation as a business model is the most common type of small residential installation firm - these firms install solar panel and some provide monitoring and maintenance but do not directly provide financing to the customer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite">
+        <rdfs:comment xml:lang="en">Properties associated with the site or building conditions that impact soft costs and system requirements.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarLease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarLease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ThirdPartyOwnership"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPPA"/>
+        <rdfs:comment xml:lang="en">Customer pays a monthly fee for access to equipment. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor">
+        <rdfs:comment xml:lang="en">Actors in the ecosystem of the solar industry, ranging from manufacturer to customer, that provide essential functions in the solar value chain.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOnly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOnly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallation"/>
+        <rdfs:comment xml:lang="en">Installation firm that only installs solar and does not have any other product lines or offerings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+        <rdfs:comment xml:lang="en">Any organization, e.g., government, for profit, non-profit, in the solar ecosystem.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPPA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPPA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ThirdPartyOwnership"/>
+        <rdfs:comment xml:lang="en">Customer pays monthly fee for power generated from equipment. Some markets do  not allow third parties to sell power so PPA is not an option.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem">
+        <rdfs:comment xml:lang="en">A residential, roof-top solar system, used to convert solar energy to electricity for self consumption or export to the electric grid. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarServicesSoftware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarServicesSoftware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OverheadCost"/>
+        <rdfs:comment xml:lang="en">Costs associated with the purchase, licensing, maintenance, and training necessary to implement software solutions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost">
+        <rdfs:comment xml:lang="en">The non-hardware costs of solar adoption.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent">
+        <rdfs:comment xml:lang="en">Soft costs associated with various components of installed solar. The direct cost of components, such as panels, inverters, and racking, is a hardware cost, which by definition is excluded from soft costs. However components of a solar PV installation can influence installation labor, system design (interoperability, standardization), supply chain, financing (bankability) and customer acquisition.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemHardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemHardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemSoftware"/>
+        <rdfs:comment xml:lang="en">Solar system hardware captures the physical components of the solar PV system and is used to link properties to soft costs associated with each piece of hardware (i.e. installation time).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemSoftware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemSoftware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+        <rdfs:comment xml:lang="en">Software associated with solar operation, monitoring and maintenance, including direct costs of purchase or costs of software use.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#StandardsOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#StandardsOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator"/>
+        <rdfs:comment xml:lang="en">Organizations that coordinate, develop, and publish standards on equipment design and system design. Standards can play an important role in product safety and component interoperability, both of which can reduce costs. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Government"/>
+        <rdfs:comment xml:lang="en">State-level government </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#StructuralInspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#StructuralInspection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inspection"/>
+        <rdfs:comment xml:lang="en">Inspection of structural components of the permitted work. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SubscriptionModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SubscriptionModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OwnershipModel"/>
+        <rdfs:comment xml:lang="en">Ownership model for community shared solar. There are multiple subscription options that fall under this that could be used for community solar installation, including purchasing panels, leasing panels and buying energy(kWh)/capacity(kW). Community shared solar can  be related to the hasOwnershipModel property to capture all subscription model types. Subscription Models are often associated with third-party ownership, but in this context, we limit subscription model to only subscription options for participating in community shared solar.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplyChain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplyChain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:comment xml:lang="en">Supply chain soft costs are not well represented in the literature. We therefore apply the main concepts associated with supply chains in general to classify soft costs. When thinking about related soft costs, carrying costs (inventory, warehousing, finance), lead times (distribution, transportation), and delays that result in price reductions not passing to customer (inventory) are some of the supply chain issues that directly contribute to soft costs. However these supply chain costs may not be discrete or consistently tracked to the extent that they can be assigned to a single concept.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplySide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplySide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy"/>
+        <rdfs:comment xml:lang="en">Policy targeting market level factors such as price, e.g., competition, mergers, and market power.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SystemDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SystemDesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+        <rdfs:comment xml:lang="en">System Design includes labor and related expenses necessary to design the solar PV system. Some aspects of design may be difficult to separate from sales and customer acquisition costs, since small installers often have the same person performing system design as part of the bidding and customer acquisition process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ThirdPartyLeadGeneration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ThirdPartyLeadGeneration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#LeadGeneration"/>
+        <rdfs:comment xml:lang="en">External firm or group that sources leads through initiation of consumer interest or inquiry into products/services.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ThirdPartyOwnership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ThirdPartyOwnership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OwnershipModel"/>
+        <rdfs:comment xml:lang="en">Third Party Ownership includes lease and power purchasing agreements (PPA). For leases and PPAs the targeted monthly rate is to be less than electricity bill and are typically agreements of 10-20 years. Third party owners are responsible for installation, interconnection, permits, government incentives (ITC and accelerated depreciation), and maintenance/monitoring. Transferability of TPO contracts is a concept that frequently comes up to reduce barriers and risk of a long-term contract (useful in cases where homeowner moves). </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#TradeAssociation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#TradeAssociation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator"/>
+        <rdfs:comment xml:lang="en">Trade organizations, industry trade groups, or business associations, including organizations of business or individuals that operate within or practice that trade. These organizations may provide consumer or installer education, offer certification or licensure, host conferences or networking events, or collectively address policy or regulatory issues. Trade associations are often non-profit organizations. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Logistics"/>
+        <rdfs:comment xml:lang="en">Transportation includes costs associated with shipping from all points including manufacturer to distributor to installer to installation site. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Travel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Travel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PreinstallLabor"/>
+        <rdfs:comment xml:lang="en">Costs associated with traveling to and from installation sites.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Underwriter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Underwriter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RealEstateSector"/>
+        <rdfs:comment xml:lang="en">A person or company that assumes responsibility for an insurance risk, for a fee.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Utility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Utility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+        <rdfs:comment xml:lang="en">An organization that sets many of the policies that determine interconnection and rates or compensation solar owners receive for electricity fed back to the grid. We do not differentiate between utility type (IOU, Public/Muni, Co-op, REP, TDU) and do not include ISO/RTOs or PUCs in this class. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Warehousing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Warehousing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Logistics"/>
+        <rdfs:comment xml:lang="en">Warehousing includes cost of storage for distributors and installers. Some entities, particularly installers, may include this cost in overhead if they do not have separate storage facilities. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Appraiser"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MortgageLender"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Realtor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Underwriter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#AuthorityHavingJurisdiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BuildingSectorFirm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ComplementaryFirm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Facilitator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationFirm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BehavioralConstruct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Policy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarInstallationSite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarNetworkActor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarPVSystem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSoftCost"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SolarSystemComponent"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#BidPreparation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#LeadGeneration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MarketingCommunication"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CashPurchase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Loan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#MortgageFinancing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PACE"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CodesStandardsCompliance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#EngineeringDesign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SiteAssessment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Consultant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#EducationalInstitution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Incubator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ResearchOrganization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#StandardsOrganization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#TradeAssociation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#County"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Federal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Municipal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#State"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerAcquisition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Finance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#InstallationLabor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OverheadCost"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PII"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplyChain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SystemDesign"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#CustomerOwnership"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SubscriptionModel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ThirdPartyOwnership"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#DemandSide"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#SupplySide"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Distribution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inventory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Transportation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Warehousing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#ElectricalLabor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#GeneralConstructionLabor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#RoofingLabor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inspection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Interconnection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Permitting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Inverter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Mounting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Panel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OffSitePrep"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#OnSitePrep"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#Travel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitApplication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitApproval"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/utexas/ontologies/2018/1/SSCO#PermitReview"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
